@@ -32,8 +32,6 @@ def Install(menu_name='This is the name that shows up in the context menu.'):
         wr.CloseKey(key)
     #endfor
 
-    #C:\Users\xuzew\AppData\Local\Programs\Python\Python37\python.exe d:\Code\devops\pdf-del-first-page.py "%1"
-
 
 if __name__ == "__main__":
     if len(sys.argv) == 1:
