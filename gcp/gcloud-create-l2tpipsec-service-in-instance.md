@@ -15,7 +15,7 @@
 ```
 service ipsec restart
 service xl2tpd restart
-``
+```
 
 ### Ubuntu & Debian
 ```
@@ -32,7 +32,6 @@ ipsec verify
 ### create a Wireguard service in a instance of debian linux
 
 ```
-
 gcloud compute instances create wireguard-tk-2 \
 --machine-type f1-micro \
 --zone asia-northeast1-b \
@@ -43,4 +42,11 @@ sudo su -
 apt-get update
 wget -qO- https://git.io/wireguard.sh | bash
 wg show'
+```
+
+```
+gcloud compute instances create shadow-hk-1 \
+--machine-type f1-micro \
+--zone asia-east2-a \
+--image 'https://www.googleapis.com/compute/v1/projects/xuzewei/global/images/shadowsocks'
 ```
