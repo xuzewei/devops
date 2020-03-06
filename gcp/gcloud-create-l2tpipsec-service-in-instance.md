@@ -9,9 +9,7 @@ sh vpnsetup.sh"```
 ### query instances list
 ```gcloud compute instances list```
 
-###  gcloud instances for example
-```gcloud compute images list | grep ubuntu```
-```gcloud compute instances delete xxxxx```
+
 
 ### Your IPsec pre-shared key in /etc/ipsec.secrets.
 ```sudo cat /etc/ipsec.secrets```
