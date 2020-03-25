@@ -1,12 +1,6 @@
 #!/bin/bash
 
 #适用centos7
-#=========================
-# 介绍：适用于CentOS7"
-# 作者：atrandys"
-# 网站：www.atrandys.com"
-# Youtube：atrandys"
-#=========================
 
 #安装epel源
 yum -y install wget

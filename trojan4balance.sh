@@ -9,7 +9,7 @@ green(){
 red(){
     echo -e "\033[31m\033[01m$1\033[0m"
 }
-#copy from 秋水逸冰 ss scripts
+
 if [[ -f /etc/redhat-release ]]; then
     release="centos"
     systemPackage="yum"
@@ -23,18 +23,6 @@ elif cat /etc/issue | grep -Eqi "ubuntu"; then
     systemPackage="apt-get"
     systempwd="/lib/systemd/system/"
 elif cat /etc/issue | grep -Eqi "centos|red hat|redhat"; then
-    release="centos"
-    systemPackage="yum"
-    systempwd="/usr/lib/systemd/system/"
-elif cat /proc/version | grep -Eqi "debian"; then
-    release="debian"
-    systemPackage="apt-get"
-    systempwd="/lib/systemd/system/"
-elif cat /proc/version | grep -Eqi "ubuntu"; then
-    release="ubuntu"
-    systemPackage="apt-get"
-    systempwd="/lib/systemd/system/"
-elif cat /proc/version | grep -Eqi "centos|red hat|redhat"; then
     release="centos"
     systemPackage="yum"
     systempwd="/usr/lib/systemd/system/"
