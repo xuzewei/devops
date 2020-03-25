@@ -15,9 +15,10 @@
 ### gcloud compute instances create
 
 ```bash
-gcloud compute instances create ssr-ubuntu1804-1 \
---machine-type f1-micro \
---image 'https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/images/family/ubuntu-1804-lts' 
+gcloud compute instances create v2ray-ubuntu1804-1 \
+--machine-type g1-small \
+--image 'https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/images/family/ubuntu-1804-lts' \
+--metadata startup-script="sudo curl -O https://raw.githubusercontent.com/atrandys/proV/master/config_v2ray.sh && chmod +x config_v2ray.sh && ./config_v2ray.sh"
 ```
 
 ```bash
