@@ -15,6 +15,12 @@
 ### gcloud compute instances create
 
 ```bash
+gcloud compute instances create ssr-ubuntu1804-1 \
+--machine-type f1-micro \
+--image 'https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/images/family/ubuntu-1804-lts' 
+```
+
+```bash
 gcloud compute instances create ipsecvpn-ubuntu1604-1 \
 --machine-type f1-micro \
 --image 'https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/images/family/ubuntu-1604-lts' \
