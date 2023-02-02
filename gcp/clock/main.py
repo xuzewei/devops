@@ -24,6 +24,6 @@ class MainPage(webapp2.RequestHandler):
             'logout_url': logout_url,
         }
         self.response.out.write(template.render(context))
-        
+
 
 application = webapp2.WSGIApplication([('/', MainPage)], debug=True)
